@@ -4,55 +4,77 @@ import { useState } from "react";
 
 const bookDB = {
   Technology: [
-    { name: "Science and technology", rating: "4/5" },
-    { name: "The code breaker", rating: "3.5/5" },
-    { name: "feadback:This books are very usefull in this more information is their,book:space", rating: "Language:english" }
-  
+    {
+      name: "Science and technology",
+      rating: "4/5",
+      description:
+        "This book gives total information about science and technology"
+    },
+    {
+      name: "The code breaker",
+      rating: "3.5/5",
+      description: "This book will increase the intrest on books"
+    },
+    {
+      name: "book:space",
+      rating: "4/5",
+      description:
+        "THis is my favoret book we can get moor information about space"
+    }
   ],
 
   fable: [
     {
       name: "The Grate Gatsby ",
-      rating: "4.8/5"
+      rating: "4.8/5",
+      description: "the grate gatsby is a 1925 novel by American writer."
     },
     {
       name: "Euphori,Lily King",
-      rating: "4/5"
+      rating: "4/5",
+      description: "this is a famous book."
     },
     {
       name: "Deep work",
-      rating: "5/5"
+      rating: "5/5",
+      description: "this book motivates the people."
     }
   ],
   business: [
     {
-      name: "ANAmerican Life",
-      rating: "4.5/5"
+      name: "AN American Life",
+      rating: "4.5/5",
+      description:
+        "This is An American life we will get information about American life"
     },
     {
       name: "A Brief Histry Time",
-      rating: "5/5"
+      rating: "5/5",
+      description: "It was first published in 1988"
     },
     {
       name: "The constitution of india",
-      rating: "5/5"
+      rating: "5/5",
+      description: "This is a supreme law of india"
     }
   ],
   Artbooks: [
     {
       name: "365 days of art",
-      rating: "4.8/5"
+      rating: "4.8/5",
+      description: "This is a very intresting 365 days of art book"
     },
     {
       name: "The story of art",
-      rating: "4.7/5"
+      rating: "4.7/5",
+      description: "This book tells about art,we can know about art"
     },
     {
       name: "Art & fear",
-      rating: "4.9/5"
+      rating: "4.9/5",
+      description: "this is a world famous book Art & fear"
     }
-  ],
-  
+  ]
 };
 
 export default function App() {
@@ -65,7 +87,9 @@ export default function App() {
       <h1> 📝 goodbooks 📖 </h1>
       <p style={{ fontSize: "smaller" }}>
         {" "}
-        Checkout my favorite books 📚. Select a genre to get started{" "}
+        Checkout my favorite books 📚. Select a genre to get started,A room
+        without books is like a body without a soul.Books are a uniquely
+        portable magic.{" "}
       </p>
 
       <div>
@@ -103,6 +127,7 @@ export default function App() {
               {" "}
               <div style={{ fontSize: "larger" }}> {book.name} </div>
               <div style={{ fontSize: "smaller" }}> {book.rating} </div>
+              <div style={{ fontSize: "smaller" }}> {book.description} </div>
             </li>
           ))}
         </ul>
